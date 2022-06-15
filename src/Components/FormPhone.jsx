@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class FormPhone extends Component {
   constructor() {
     super();
     this.state = {
-      phone: '',
+      phone: "",
       isValid: false,
-      message: '',
+      message: "",
     };
     this.onChange = this.onChange.bind(this);
   }
@@ -26,10 +26,10 @@ class FormPhone extends Component {
       {
         isValid: isPhoneValid,
         message: isPhoneValid
-          ? 'Phone Number is Valid!'
-          : 'Phone Number not Valid!',
+          ? "Phone Number is Valid!"
+          : "Phone Number not Valid! 6758",
       },
-      () => this.props.onPhoneSubmit(this.state),
+      () => this.props.onPhoneSubmit(this.state)
     );
   }
 
@@ -37,7 +37,7 @@ class FormPhone extends Component {
     const messageTemplate = this.state.message ? (
       <div>{this.state.message}</div>
     ) : (
-      ''
+      ""
     );
 
     return (
