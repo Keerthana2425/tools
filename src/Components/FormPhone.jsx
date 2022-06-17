@@ -29,7 +29,7 @@ class FormPhone extends Component {
         isValid: isPhoneValid,
         message: isPhoneValid
           ? "Phone Number is Valid!"
-          : "Phone Number not Valid! 6758",
+          : "Phone Number not Valid!",
       },
       () => this.props.onPhoneSubmit(this.state)
     );
